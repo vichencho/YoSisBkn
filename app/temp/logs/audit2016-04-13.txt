@@ -1,9 +1,0 @@
-[Wed, 13 Apr 16 12:27:38 -0430][DEBUG] [/sistema/usuarios/editar/3.fa601d727283/][admin][127.0.0.1] Se ha modificado la información del usuario vleon.
-[Wed, 13 Apr 16 22:07:52 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se activa el acceso al usuario 11111. Motivo: Activado por registro inicial.
-[Wed, 13 Apr 16 22:07:52 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se ha registrado el usuario 11111 en el sistema.
-[Wed, 13 Apr 16 23:03:26 -0430][DEBUG] [/sistema/usuarios/estado/bloquear/5.6284d7549777/][admin][127.0.0.1] Se bloquea el acceso al sistema al usuario 11111. Motivo: Prueba 1.
-[Wed, 13 Apr 16 23:04:01 -0430][DEBUG] [/sistema/usuarios/estado/bloquear/3.1fe5cad46b1a/][admin][127.0.0.1] Se bloquea el acceso al sistema al usuario vleon. Motivo: Prueba bloqueo 2.
-[Wed, 13 Apr 16 23:30:35 -0430][DEBUG] [/sistema/usuarios/estado/reactivar/3.398ac9e88d65/][admin][127.0.0.1] Se activa el acceso al usuario vleon. Motivo: xxx.
-[Wed, 13 Apr 16 23:30:45 -0430][DEBUG] [/sistema/usuarios/estado/reactivar/5.1e08177441c5/][admin][127.0.0.1] Se activa el acceso al usuario 11111. Motivo: yyy.
-[Wed, 13 Apr 16 23:31:07 -0430][DEBUG] [/sistema/usuarios/estado/bloquear/5.6284d7549777/][admin][127.0.0.1] Se bloquea el acceso al sistema al usuario 11111. Motivo: 222.
-[Wed, 13 Apr 16 23:31:20 -0430][DEBUG] [/sistema/usuarios/estado/reactivar/5.1e08177441c5/][admin][127.0.0.1] Se activa el acceso al usuario 11111. Motivo: 333.

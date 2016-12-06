@@ -1,2 +1,0 @@
-[Tue, 06 Sep 16 14:36:46 -0400][DEBUG] [/sistema/usuarios/estado/bloquear/2.749949052fc1/][admin][::1] Se bloquea el acceso al sistema al usuario pperez. Motivo: Prueba de bloqueo 01.
-[Tue, 06 Sep 16 23:42:38 -0400][DEBUG] [/sistema/usuarios/estado/reactivar/2.9500c01351fa/][admin][::1] Se activa el acceso al usuario pperez. Motivo: Desbloqueo de prueba 01.

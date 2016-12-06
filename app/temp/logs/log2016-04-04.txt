@@ -1,2 +1,0 @@
-[Mon, 04 Apr 16 23:56:09 -0430][DEBUG] SELECT empresa.* FROM empresa WHERE empresa.id IS NOT NULL LIMIT 1
-[Mon, 04 Apr 16 23:56:09 -0430][ERROR] ERROR:  syntax error at or near "ORDER" LINE 1: ...rio_at,usuario_in FROM usuario WHERE perfil_id =  ORDER BY p...                                                              ^ al ejecutar <em>'SELECT id,nombre,apellido,nuip,tipo_nuip_id,telefono_cel,telefono_ofi,telefono_res,sucursal_id,login,password,perfil_id,email,tema,app_ajax,datagrid,fotografia,pool,usuario_at,usuario_in FROM usuario WHERE perfil_id =  ORDER BY perfil'</em> 

@@ -1,7 +1,0 @@
-[Sat, 03 Sep 16 00:55:05 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
-[Sat, 03 Sep 16 00:55:05 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
-[Sat, 03 Sep 16 01:05:51 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
-[Sat, 03 Sep 16 01:05:51 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
-[Sat, 03 Sep 16 01:34:20 -0400][DEBUG] [/sistema/backups/crear/][admin][::1] Se crea una copia de seguridad bajo la denominación: PRUEBA 20160903 001.
-[Sat, 03 Sep 16 20:09:55 -0400][INFO] [/sistema/configuracion/config/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
-[Sat, 03 Sep 16 20:09:55 -0400][INFO] [/sistema/configuracion/config/][admin][::1] Se ha actualizado el archivo de configuración del sistema.

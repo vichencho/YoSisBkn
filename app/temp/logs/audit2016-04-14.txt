@@ -1,1 +1,0 @@
-[Thu, 14 Apr 16 00:04:34 -0430][DEBUG] [/sistema/usuarios/editar/5.bb8557fc5b61/][admin][127.0.0.1] Se ha modificado la información del usuario 11111.
