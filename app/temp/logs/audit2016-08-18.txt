@@ -1,0 +1,2 @@
+[Thu, 18 Aug 16 00:55:14 -0400][DEBUG] [/sistema/usuarios/agregar/][admin][::1] Se activa el acceso al usuario pperez. Motivo: Activado por registro inicial.
+[Thu, 18 Aug 16 00:55:14 -0400][DEBUG] [/sistema/usuarios/agregar/][admin][::1] Se ha registrado el usuario pperez en el sistema.

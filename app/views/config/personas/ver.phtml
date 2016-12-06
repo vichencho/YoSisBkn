@@ -1,0 +1,116 @@
+<?php View::flash(); ?>
+
+<div class="container shell-view">
+
+    <?php View::process($page_module, $page_title, $set_title); ?>
+    
+    <?php View::partial('subnav/usuario/principal', FALSE, array('id'=>$usuario->id)); ?>
+
+    <?php echo DwForm::open(); ?>
+        
+        <ul class="nav nav-tabs hidden-xs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Información personal</a></li>
+            <li><a href="#tab2" data-toggle="tab">Información de la cuenta</a></li>            
+        </ul>
+        <ul class="nav nav-pills nav-stacked visible-xs">    
+            <li class="active"><a href="#tab1" data-toggle="tab">Información personal</a></li>
+            <li><a href="#tab2" data-toggle="tab">Información de la cuenta</a></li>            
+        </ul>
+    
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="tab1">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('persona.nombre', array('class'=>' input-readonly'), $usuario->persona->nombre, 'Nombre'); ?>                        
+                            </div>
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('persona.apellido', array('class'=>' input-readonly'), $usuario->persona->apellido, 'Apellido'); ?>                        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('persona.nuip', array('class'=>' input-readonly'), $usuario->persona->nuip, $usuario->persona->tipo_nuip->tipo_nuip); ?>                        
+                            </div>
+                            <div class="col-md-3">
+                                <?php echo DwForm::text('persona.telefono', array('class'=>' input-readonly'), $usuario->persona->telefono, 'Teléfono'); ?>                        
+                            </div>
+                            <div class="col-md-3">
+                                <?php echo DwForm::text('persona.celular', array('class'=>' input-readonly'), $usuario->persona->celular, 'Celular'); ?>                        
+                            </div>
+                        </div>   
+                        <div class="row">
+                            <div class="col-md-6">                    
+                                <?php echo DwForm::text('persona.fotografia', array('class'=>'input-readonly'), $usuario->persona->fotografia, 'Archivo de Fotografía'); ?>
+                            </div>                   
+                        </div>                   
+                    </div>                    
+                    <div class="col-md-4 text-center hidden-xs hidden-sm">
+                        <div class="col-md-6 profile-picture text-center text-middle shadow-dark" style="margin-top: 5px">
+                            <?php echo DwHtml::img("upload/personas/".$usuario->persona->fotografia, $usuario->persona->nombre.' '.$usuario->persona->apellido, array('id'=>'img-persona')); ?>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane" id="tab2">
+                
+                <div class="row">
+                    <div class="col-md-8">                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('usuario.login', array('class'=>'input-lower input-readonly'), NULL, 'Usuario'); ?>
+                            </div>
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('usuario.perfil', array('class'=>' input-readonly'), $usuario->perfil->perfil, 'Perfil'); ?>
+                            </div>
+                        </div>
+                        <div class="row">                              
+                            <div class="col-md-6">
+                                <?php echo DwForm::email('usuario.email',array('class'=>' input-readonly'),  NULL, 'Email'); ?>
+                            </div>   
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('usuario.tema',  array('class'=>' input-readonly'), NULL,'Apariencia'); ?>
+                            </div>      
+                        </div>
+                        <div class="row">             
+                            <div class="col-md-3">
+                                <?php echo DwForm::text('usuario.datagrid', array('class'=>'input-readonly'), NULL, 'Registros por página'); ?>
+                            </div>          
+                            <div class="col-md-3">
+                                <?php echo DwForm::oneSelect('usuario.app_ajax', ($usuario->app_ajax==1) ? 'On' : 'Off', array('class'=>' input-readonly'), 'App con AJAX'); ?>
+                            </div>
+                            <div class="col-md-6">
+                                <?php echo DwForm::text('usuario.pool', array('class'=>'input-lower input-readonly'), $usuario->pool, 'Pool'); ?>
+                            </div>      
+                        </div>   
+                </div>               
+                <div class="col-md-4 text-center hidden-xs hidden-sm">
+                    <div class="col-md-6 profile-picture text-center text-middle shadow-dark" style="margin-top: 5px">
+                        <?php echo DwHtml::img("upload/personas/".$usuario->persona->fotografia, $usuario->persona->nombre.' '.$usuario->persona->apellido, array('id'=>'img-persona')); ?>
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+           
+        </div>
+
+        <div class="row">
+            
+            <div class="form-actions">    
+                <div class="text-left">
+                    <?php echo DwButton::back(); ?>                    
+                </div>
+            </div>
+
+        </div>
+
+    <?php echo DwForm::close(); ?>
+
+</div>

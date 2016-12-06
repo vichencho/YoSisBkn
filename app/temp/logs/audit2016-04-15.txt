@@ -1,0 +1,8 @@
+[Fri, 15 Apr 16 13:29:23 -0430][INFO] [/sistema/configuracion/index/][admin][127.0.0.1] Se ha actualizado el archivo de configuración del sistema.
+[Fri, 15 Apr 16 13:29:23 -0430][INFO] [/sistema/configuracion/index/][admin][127.0.0.1] Se ha actualizado el archivo de configuración del sistema.
+[Fri, 15 Apr 16 14:08:10 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se activa el acceso al usuario 11111. Motivo: Activado por registro inicial.
+[Fri, 15 Apr 16 14:08:10 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se ha registrado el usuario 11111 en el sistema.
+[Fri, 15 Apr 16 14:11:48 -0430][DEBUG] [/sistema/backups/crear/][admin][127.0.0.1] Se crea una copia de seguridad bajo la denominación: BK20160415.
+[Fri, 15 Apr 16 14:14:21 -0430][INFO] [/sistema/mantenimiento/reparar/acceso.95a675c581ef/][admin][127.0.0.1] Se ha realizado el mantenimiento de reparación a la tabla acceso.
+[Fri, 15 Apr 16 14:57:02 -0430][INFO] [/sistema/configuracion/index/][admin][127.0.0.1] Se ha actualizado el archivo de configuración del sistema.
+[Fri, 15 Apr 16 14:57:02 -0430][INFO] [/sistema/configuracion/index/][admin][127.0.0.1] Se ha actualizado el archivo de configuración del sistema.

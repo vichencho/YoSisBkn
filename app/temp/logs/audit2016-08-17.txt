@@ -1,0 +1,2 @@
+[Wed, 17 Aug 16 23:43:49 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.
+[Wed, 17 Aug 16 23:43:49 -0400][INFO] [/sistema/configuracion/index/][admin][::1] Se ha actualizado el archivo de configuración del sistema.

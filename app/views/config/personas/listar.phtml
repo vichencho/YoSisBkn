@@ -1,0 +1,64 @@
+<?php View::flash(); ?>
+
+<script type="text/javascript">
+    $(function() {
+        $('table').kgrid({
+            form_to         : $.KumbiaPHP.publicPath+'config/personas/buscar/',            
+            order_attr      : '<?php echo (APP_AJAX) ? 'class="js-link js-spinner"' : ''; ?>',
+            order_to        : $.KumbiaPHP.publicPath+'config/personas/listar/'
+        });
+    });
+</script>
+
+<div class="container shell-view">
+
+    <?php View::process($page_module, $page_title, $set_title); ?>
+
+    <div class="btn-toolbar btn-toolbar-top">
+        <div class="row">
+            <div class="btn-actions">
+                <?php echo DwHtml::button("config/personas/agregar/", 'agregar', NULL, 'fa-check-square-o', APP_AJAX); ?>
+            </div>            
+        </div>
+    </div>
+
+    <div class="container-overflow">
+
+        <table class="table table-bordered table-hover table-striped table-condensed table-responsive">
+            <thead>
+                <tr>
+                    <th>NUM</th>
+                    <th class="col-hidden" data-search="identificacion" data-order="identificacion">IDENTIFICACION</th>
+                    <th class="col-hidden" data-search="nombre" data-order="nombre">NOMBRE</th>
+                    <th class="col-hidden" data-search="apellido" data-order="apellido">APELLIDO</th>
+                    <th class="col-hidden" data-search="telefono" data-order="telefono">TELEFONO</th>
+                    <th class="col-hidden" data-search="celular" data-order="celular">CELULAR</th> 
+                    <th class="col-blocked text-center">ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($personas->items as $persona): ?>
+                    <?php $key_shw = Security::setKey($persona->id, 'shw_persona'); ?>
+                    <?php $key_ina = Security::setKey($persona->id, 'bloquear_persona'); ?>
+                    <?php $key_rea = Security::setKey($persona->id, 'reactivar_persona'); ?>
+                    <tr>
+                        <td><?php echo $personas->counter; ?></td>
+                        <td><?php echo $persona->nuip; ?></td>
+                        <td><?php echo $persona->nombre; ?></td>
+                        <td><?php echo $persona->apellido; ?></td>
+                        <td><?php echo $persona->telefono; ?></td>
+                        <td><?php echo $persona->celular; ?></td>
+                        <td>
+                            <?php echo DwHtml::buttonTable('Ver persona', "config/personas/ver/$key_shw/", NULL, 'info', 'fa-search'); ?>              
+                        </td>
+                    </tr>
+                    <?php $personas->counter++; ?>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+    </div>
+
+    <?php View::partial('paginators/default', false, array('page'=>$personas, 'url'=>"config/personas/listar/$order/")); ?>
+
+</div>

@@ -1,0 +1,20 @@
+<script type='text/javascript'>
+
+	$(document).ready(function(){
+		var usuario_id 	=	$('#usuario_id').val();
+			$.ajax({
+				type: "POST",
+				url: "<?php echo PUBLIC_PATH . 'sistema/usuarios/getFotografia/'; ?>",
+				data: "usuario_id=" + usuario_id,
+				success: function(html){
+					$("#div_fotografia").html(html);
+					$("#div_fotografia").focus;	
+				}
+			});
+	});	
+
+</script> 
+
+<label class="control-label">Usuario Representante Legal</label>
+<?php echo DwForm::dbSelect('empresa.usuario_id', array('nombre','apellido','(','nuip',')'), array('usuario', 'getUsuarioPorPerfil', $perfil_id), NULL, NULL, NULL, NULL, NULL, '')?>
+                         

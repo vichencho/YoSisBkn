@@ -1,0 +1,22 @@
+<div class="btn-toolbar btn-toolbar-top">
+    <div class="row">
+        <div class="btn-actions">
+
+            <div class="btn-group fa-pd-expand">                
+                <?= DwHtml::button("config/empresa/index/", 'Empresa', array('class'=>'btn-info'), 'fa-building'); ?>
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">                
+                    <li>
+                        <?= DwHtml::link("config/empresa/index/", 'Ver', array('class'=>''), 'fa-eye'); ?>
+                    </li>
+                    <li>
+                        <?= DwHtml::link("config/empresa/editar/".Security::setKey($id, 'upd_empresa'), 'Modificar', array('class'=>''), 'fa-edit'); ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>        
+</div>
+
+<hr class="divider">

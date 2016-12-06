@@ -1,0 +1,9 @@
+[Sun, 04 Sep 16 00:35:28 -0400][DEBUG] [/sistema/backups/restaurar/31.5b563af6948d/][admin][::1] Se ha restaurado el sistema con la copia de seguridad: PRUEBA 20160829901 02.
+[Sun, 04 Sep 16 01:09:06 -0400][DEBUG] [/sistema/backups/crear/][admin][::1] Se crea una copia de seguridad bajo la denominación: PRUEBA 20160904 001.
+[Sun, 04 Sep 16 01:10:26 -0400][DEBUG] [/sistema/backups/restaurar/30.09d23b43be3f/][admin][::1] Se ha restaurado el sistema con la copia de seguridad: PRUEBA 20160829901 01.
+[Sun, 04 Sep 16 01:11:36 -0400][DEBUG] [/sistema/backups/restaurar/40.ab8bedf9af60/][admin][::1] Se ha restaurado el sistema con la copia de seguridad: PRUEBA 20160904 001.
+[Sun, 04 Sep 16 01:16:27 -0400][DEBUG] [/sistema/backups/restaurar/22.3d713ff785b1/][admin][::1] Se ha restaurado el sistema con la copia de seguridad: PRUEBA 20160829 06.
+[Sun, 04 Sep 16 01:22:52 -0400][DEBUG] [/sistema/backups/restaurar/43.3c250f6360a2/][admin][::1] Se ha restaurado el sistema con la copia de seguridad: PRUEBA 20160829 07.
+[Sun, 04 Sep 16 01:37:07 -0400][DEBUG] [/sistema/backups/crear/][admin][::1] Se crea una copia de seguridad bajo la denominación: Respaldo de Prueba 20160904 01.
+[Sun, 04 Sep 16 01:45:18 -0400][DEBUG] [/sistema/backups/crear/][admin][::1] Se crea una copia de seguridad bajo la denominación: Respaldo de Prueba 20160904 02.
+[Sun, 04 Sep 16 01:53:35 -0400][DEBUG] [/sistema/backups/crear/][admin][::1] Se crea una copia de seguridad bajo la denominación: Respaldo de Prueba 20160904 03.

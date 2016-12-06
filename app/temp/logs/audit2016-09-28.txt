@@ -1,0 +1,2 @@
+[Wed, 28 Sep 16 23:55:29 -0400][DEBUG] [/sistema/usuarios/estado/bloquear/2.9b1711e04bd7/][admin][::1] Se bloquea el acceso al sistema al usuario pperez. Motivo: Prueba 20160028_1.
+[Wed, 28 Sep 16 23:56:03 -0400][DEBUG] [/sistema/usuarios/estado/reactivar/2.126c4a3b8191/][admin][::1] Se activa el acceso al usuario pperez. Motivo: Restitución de prueba.

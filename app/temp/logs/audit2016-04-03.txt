@@ -1,0 +1,4 @@
+[Sun, 03 Apr 16 19:42:43 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se activa el acceso al usuario prb1. Motivo: Activado por registro inicial.
+[Sun, 03 Apr 16 19:42:43 -0430][DEBUG] [/sistema/usuarios/agregar/][admin][127.0.0.1] Se ha registrado el usuario prb1 en el sistema.
+[Sun, 03 Apr 16 19:43:57 -0430][DEBUG] [/sistema/mi_cuenta/index/][prb1][127.0.0.1] Se ha modificado la información del usuario prb1.
+[Sun, 03 Apr 16 20:13:23 -0430][DEBUG] [/sistema/mi_cuenta/index/][vleon][127.0.0.1] Se ha modificado la información del usuario vleon.

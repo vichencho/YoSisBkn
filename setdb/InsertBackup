@@ -1,0 +1,2 @@
+﻿INSERT INTO backup (id,usuario_id,denominacion,tamano,archivo,backup_at)
+   VALUES (3,1,'Respaldo 20160904 03 insertado', '39.0 Mb', 'backup-3.sql.gz', '2016-09-04 01:50:00')

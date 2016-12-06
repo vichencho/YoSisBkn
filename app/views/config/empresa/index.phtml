@@ -1,0 +1,129 @@
+
+<div class="container shell-view">
+
+    <?php View::process($page_module, $page_title, $set_title); ?>
+    
+    <?php View::partial('subnav/empresa/principal', FALSE, array('id'=>$empresa->id)); ?>
+
+    <?php echo DwForm::open(); ?>
+        
+    <ul class="nav nav-tabs hidden-xs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Información general</a></li>
+        <li><a href="#tab2" data-toggle="tab">Representante Legal</a></li>     
+        <li><a href="#tab3" data-toggle="tab">Logo</a></li>     
+    </ul>
+    
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="tab1">
+                
+            <div class="row">
+                <div class="col-md-6">
+                    <?php echo DwForm::text('empresa.razon_social', array('class'=>'input-readonly'), $empresa->razon_social, 'Nombre o Razón Social'); ?>                        
+                </div>
+                <div class="col-md-2">
+                    <?php echo DwForm::text('empresa.siglas', array('class'=>'input-readonly'), $empresa->siglas, 'Siglas'); ?>
+                </div>  
+                <div class="col-md-4">
+                    <?php echo DwForm::text('empresa.nit', array('class'=>'input-readonly'), $empresa->nit, $empresa->tipo_nuip->tipo_nuip); ?>
+                </div>                      
+            </div>   
+            <div class="row">  
+                <div class="col-md-4">
+                    <?php echo DwForm::text('empresa.nit', array('class'=>'input-readonly'), $empresa->nit, "Nit"); ?>                        
+                </div>                            
+                <div class="col-md-4">
+                    <?php echo DwForm::text('empresa.telefono', array('class'=>'input-readonly'), $empresa->telefono, 'Teléfono'); ?>
+                </div>                                 
+                <div class="col-md-4">
+                        <?php echo DwForm::text('empresa.fax', array('class'=>'input-readonly'), $empresa->fax, 'Fax'); ?>
+                </div>                                
+            </div>  
+            <div class="row">                           
+                <div class="col-md-4">
+                    <?php echo DwForm::email('empresa.email', array('class'=>'input-email input-readonly mask-email'), $empresa->email, 'Email'); ?>
+                </div>                             
+                <div class="col-md-6">
+                    <?php echo DwForm::url('empresa.pagina_web', array('class'=>' input-readonly'), $empresa->pagina_web, 'Página Web'); ?>
+                </div>   
+            </div>    
+            
+            <div class="row">
+                <div class="form-actions">
+                    <?php echo DwButton::nextTab(); ?>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="tab2">
+                 
+         <div class="row">
+            <div class="col-md-8">
+                <div class="row">                             
+                    <div class="col-md-6">
+                        <?php echo DwForm::text('persona.nombre', array('class'=>'input-readonly'), $empresa->usuario->persona->nombre, 'Nombre'); ?>
+                    </div>                          
+                    <div class="col-md-6">
+                        <?php echo DwForm::text('persona.apellido', array('class'=>'input-readonly'), $empresa->usuario->persona->apellido, 'Apellido'); ?>
+                    </div>             
+                </div>  
+                <div class="row">                            
+                    <div class="col-md-6">
+                        <?php echo DwForm::text('persona.celular', array('class'=>'input-readonly'), $empresa->usuario->persona->celular, 'Celular'); ?>
+                    </div>                            
+                    <div class="col-md-6">
+                        <?php echo DwForm::email('usuario.email', array('class'=>'input-email input-readonly mask-email'), $empresa->usuario->email, 'Email'); ?>
+                    </div>            
+                </div> 
+                <div class="row">                            
+                    <div class="col-md-6">
+                        <?php echo DwForm::text('usuario.login', array('class'=>'input-readonly'), $empresa->usuario->login, 'Usuario/Login'); ?>
+                    </div>                               
+                    <div class="col-md-6">
+                        <?php echo DwForm::text('usuario.perfil', array('class'=>'input-readonly'), $empresa->usuario->perfil->perfil, 'Perfil del Usuario'); ?>
+                    </div>           
+                </div>    
+            </div> 
+            <div class="row">    
+                <div class="col-md-4 text-center hidden-xs hidden-sm">
+                    <div class="col-md-6 profile-picture text-center text-middle shadow-dark" style="margin-top: 5px">
+                        <?php echo DwHtml::img("upload/personas/".$empresa->usuario->persona->fotografia, $empresa->usuario->persona->nombre.' '.$empresa->usuario->persona->apellido, array('id'=>'img-persona')); ?>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+            <div class="row">
+                <div class="form-actions">
+                    <?php echo DwButton::prevTab(); ?> 
+                    <?php echo DwButton::nextTab(); ?>
+                </div>
+            </div>
+
+        </div>    
+
+        <div class="tab-pane" id="tab3">
+            
+            <div class="row">
+                <div class="span6 dw-text-right">
+                    <div class="span5 dw-picture-profile dw-text-center dw-text-middle dw-shadow-dark" style="margin-top: 5px">
+                        <?php echo DwHtml::img('upload/empresa/'.$empresa->logo, $empresa->razon_social, array('id'=>'img-empresa')); ?>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">    
+                <div class="text-rigth">
+                    <?php echo DwButton::prevTab(); ?>                 
+                </div>
+            </div> 
+            
+        </div>   
+
+
+    </div>
+
+
+    <?php echo DwForm::close(); ?>
+
+</div>
